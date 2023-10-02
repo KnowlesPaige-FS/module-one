@@ -6,7 +6,7 @@ app.use(express.json());
 // localhost:3000/
 app.get("/", (req, res) => {
     res.status(200).json({
-        message: "GET - root",
+        message: "Service is up",
         metadata: {
             hostname: req.hostname, 
             method: req.method,
