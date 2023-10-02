@@ -8,7 +8,7 @@ const multiply = (30*10);
 
 const squareRoot = Math.sqrt(2304);
 
-const max = Math.max(1890, 2000)
+const max = Math.max(1890, 2000);
 
 
 module.exports = {
