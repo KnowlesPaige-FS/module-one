@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1696259024958" clover="3.2.0">
-  <project timestamp="1696259024958" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="6" coveredelements="6" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
-    <file name="string.js" path="/Users/paigeknowles/Desktop/ServerSideLanguages/module-one/module-one/string/string.js">
+<coverage generated="1696262432753" clover="3.2.0">
+  <project timestamp="1696262432753" name="All files">
+    <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="13" coveredelements="13" complexity="0" loc="11" ncloc="11" packages="2" files="2" classes="2"/>
+    <package name="math">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="math.js" path="/Users/paigeknowles/Desktop/ServerSideLanguages/module-one/module-one/math/math.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="string">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
-    </file>
+      <file name="string.js" path="/Users/paigeknowles/Desktop/ServerSideLanguages/module-one/module-one/string/string.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

@@ -1,0 +1,37 @@
+const {
+    addition,
+    subtraction,
+    divide,
+    multiply,
+    squareRoot,
+} = require("./math")
+
+describe(("Testing the Math Object"), () => {
+// Add, Subtract, Divide, Multiply
+    test("Math Addition", () => {
+        expect(4+2).toBe(6);
+    });
+
+    test("Math Substraction", () => {
+        expect(100-10).toBe(90);
+    });
+
+    test("Math Substraction", () => {
+        expect(1000/10).toBe(100);
+    });
+
+    test("Math Multiply", () => {
+        expect(30*10).toBe(300);
+    });
+});
+
+describe(("Advanced Math"), () => {
+    // Square root and Max number
+    test("Math Square root", () => {
+        expect(Math.sqrt(2304)).toBe(48);
+    });
+
+    test("Math Max", () => {
+        expect(Math.max(1890, 2000)).toBe(2000);
+    });
+});
