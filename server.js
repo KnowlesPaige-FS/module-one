@@ -1,13 +1,10 @@
 const http = require("http");
 
-const server = http.createServer((req, res) => {
-    const { headers, url, method } = req; 
-    // console.log(headers, url, method);
-    res.end();
-});
+require("dotenv").config();
+const app = require("./app");
 
-const PORT = 3000;
+const server = http.createServer(app);
 
-server.listen(PORT, () => {
-    console.log(`listening on ${PORT}`);
+server.listen(process.env.PORT, () => {
+    console.log(`listening on ${process.env.PORT}`);
 });
