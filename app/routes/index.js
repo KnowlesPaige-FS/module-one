@@ -4,7 +4,7 @@ const router = express.Router();
 // localhost:3000/api/
 router.get("/", (req, res) => {
     res.status(200).json({
-        message: "GET to API",
+        message: "GET - Service is up",
         metadata: {
             hostname: req.hostname, 
             method: req.method,
@@ -13,11 +13,11 @@ router.get("/", (req, res) => {
 });
 
 // Route parameters
-// localhost:3000/api/fhkhigdj 
-router.get("/:id", (req, res) => {
+// localhost:3000/api/45 
+router.get("/45", (req, res) => {
     const id = req.params;
     res.status(200).json({
-        message: "Service is up",
+        message: "GET by Id - Service is up",
         metadata: {
             hostname: req.hostname,
             method: req.method,
@@ -25,10 +25,10 @@ router.get("/:id", (req, res) => {
     });
 });
 
-router.put("/:id", (req, res) => {
-    const id = req.params;
+router.put("/89", (req, res) => {
+    const id = req.body;
     res.status(200).json({
-        message: "Service is up",
+        message: "Put - Service is up",
         metadata: {
             hostname: req.hostname,
             method: req.method,
@@ -37,10 +37,10 @@ router.put("/:id", (req, res) => {
 });
 
 
-router.delete("/:id", (req, res) => {
+router.delete("/9", (req, res) => {
     const id = req.params;
     res.status(200).json({
-        message: "Service is up",
+        message: "Delete - Service is up",
         metadata: {
             hostname: req.hostname,
             method: req.method,
@@ -51,14 +51,14 @@ router.delete("/:id", (req, res) => {
 router.post("/", (req, res) => {
     const { data } = req.body;
     res.status(200).json({
-        message: "Service is up", 
+        message: "Post - Service is up", 
 
     metadata: {
         hostname: req.hostname, 
         data,
         method: req.method 
     },
-     })
+     });
 });
 
 module.exports = router;
