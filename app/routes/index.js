@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-// localhost:3000/api/
+// localhost:3000/movies/
 router.get("/", (req, res) => {
     res.status(200).json({
         message: "GET - Service is up",
@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
 });
 
 // Route parameters
-// localhost:3000/api/45 
+// localhost:3000/movies/45 
 router.get("/45", (req, res) => {
     const id = req.params;
     res.status(200).json({
