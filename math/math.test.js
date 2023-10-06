@@ -9,19 +9,19 @@ const {
 describe(("Testing the Math Object"), () => {
 // Add, Subtract, Divide, Multiply
     test("Math Addition", () => {
-        expect(4+2).toBe(6);
+        expect(addition(4, 2)).toBe(6);
     });
 
     test("Math Substraction", () => {
-        expect(100-10).toBe(90);
+        expect(subtraction(100, 10)).toBe(90);
     });
 
     test("Math Substraction", () => {
-        expect(1000/10).toBe(100);
+        expect(divide(1000, 10)).toBe(100);
     });
 
     test("Math Multiply", () => {
-        expect(30*10).toBe(300);
+        expect(multiply(30, 10)).toBe(300);
     });
 });
 

@@ -1,14 +1,14 @@
-const addition = (4 + 2);
+const addition = (a, b) => a + b;
 
-const subtraction = (100 - 10);
+const subtraction = (a, b) => a - b;
 
-const divide = (1000/30);
+const divide = (a, b) => a / b;
 
-const multiply = (30*10);
+const multiply = (a, b) => a * b;
 
-const squareRoot = Math.sqrt(2304);
+const squareRoot = Math.sqrt();
 
-const max = Math.max(1890, 2000);
+const max = Math.max();
 
 
 module.exports = {

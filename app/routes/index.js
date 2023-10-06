@@ -14,8 +14,10 @@ router.get("/", (req, res) => {
 
 // Route parameters
 // localhost:3000/movies/45 
-router.get("/45", (req, res) => {
+router.get("/:45", (req, res) => {
     const id = req.params;
+    const movie = movies.find((movie) => movie.id === id);
+    
     res.status(200).json({
         message: "GET by Id - Service is up",
         metadata: {
@@ -25,8 +27,8 @@ router.get("/45", (req, res) => {
     });
 });
 
-router.put("/89", (req, res) => {
-    const id = req.body;
+router.put("/:89", (req, res) => {
+    const id = req.params;
     res.status(200).json({
         message: "Put - Service is up",
         metadata: {
@@ -37,7 +39,7 @@ router.put("/89", (req, res) => {
 });
 
 
-router.delete("/9", (req, res) => {
+router.delete("/:9", (req, res) => {
     const id = req.params;
     res.status(200).json({
         message: "Delete - Service is up",
