@@ -14,6 +14,6 @@ app.get("/", (req, res) => {
     });
 });
 
-app.use("/movies", router);
+app.use("/api", router);
 
 module.exports = app;
